@@ -1,0 +1,3 @@
+Import-Csv $1 | ForEach-Object {
+  Install-CMClient -Name $._pc -SiteCode $2 -AlwaysInstallClient $True -IncludeDomainController $True
+  }
